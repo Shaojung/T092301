@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 5;
+            return fruits.length;
         }
 
         @Override
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             TextView tv = new TextView(MainActivity.this);
-            tv.setText("Hello Hello:" + position);
+            tv.setText("Hello Hello:" + fruits[position]);
             return tv;
         }
     }
